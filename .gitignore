@@ -1,0 +1,6 @@
+node_modules/*
+.vscode/*
+client_secrets.json
+package-lock.json
+*.mp4
+*.flv
