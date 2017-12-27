@@ -42,6 +42,11 @@ var files = fs.readdirSync(config.vidpath)
                ext == 'flv'
     })
 
+if (files.length == 0) {
+    console.log(`Please place some video files into '${config.vidpath}' before starting the script.`)
+    process.exit()
+} 
+
 var time = getTime()
 YT.upload({
     title: `${files[0].split('.')[0]} ${time.d}.${time.m}.${time.y} - ${time.h}:${time.min}:${time.s}`,
