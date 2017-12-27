@@ -15,7 +15,7 @@
 2. You need to install following packages via NPM:  
 `$ npm i googleapis google-auth-library --save`
 
-3. Now, place the *'client_secrets.json'* *([Take a look below how to get it](https://github.com/zekroTJA/youtube-upload/blob/master/README.md#get-google-credentials-file))* in the same directory as the scripts
+3. Now, place the *'client_secrets.json'* *([Take a look below how to get it](https://github.com/zekroTJA/youtube-upload/#get-google-credentials-file))* in the same directory as the scripts
 
 4. Now, insert your location, where the videos will be placed later to upload, if you don't want to place them in the root directory of the scipts.
 
