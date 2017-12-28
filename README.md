@@ -5,7 +5,9 @@
 
 ---
 
-## Setup
+# Setup
+
+## Upload Server
 
 > Of course, you need the full installation of Node.js and NPM on your system.<br>(For best results, Node.js >= 8.4 and NPM >= 5.5.1)
 
@@ -26,6 +28,18 @@
 `$ node main.js clear`
 
 6. Now, all videos in the configured folder will be uploaded to the youtube channel.
+
+## Local Client
+
+> If you want to use a VPS to upload your videos, you can uplaod multiple videos to the upload server with the upload script in `client\copy.sh`.
+
+1. Copy both scripts, `client/chipergen.sh` and `client/copy.sh` to your local client (for example a Raspberry Pi).
+2. Create a ssh chipper for automated uploading videos to the VPS:  
+`$ sh chipergen.sh username@adress`
+3. Now, start the copy script and follow the instructions:  
+`$ sh copy.sh`
+
+> Of course, the chosen folder on the VPS should be the same like set in the config of the node.js script!
 
 ---
 
